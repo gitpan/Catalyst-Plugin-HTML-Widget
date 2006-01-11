@@ -1,0 +1,14 @@
+name: Catalyst-Plugin-HTML-Widget
+version: 1.0
+abstract: HTML Widget Catalyst Plugin
+author: Sebastian Riedel
+license: perl
+distribution_type: module
+requires:
+  perl: 5.8.1
+  Catalyst: 5.5
+  HTML::Widget: 0
+no_index:
+  directory:
+    - inc
+generated_by: Module::Install version 0.45
