@@ -21,4 +21,3 @@ t/02pod.t
 t/03podcoverage.t
 t/04live.t
 t/lib/TestApp.pm
-SIGNATURE                                Public-key signature (added by MakeMaker)

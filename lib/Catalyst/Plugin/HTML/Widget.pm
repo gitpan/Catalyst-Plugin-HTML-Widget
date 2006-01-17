@@ -4,7 +4,7 @@ use warnings;
 use strict;
 use HTML::Widget;
 
-our $VERSION = '1.0';
+our $VERSION = '1.1';
 
 =head1 NAME
 
@@ -68,8 +68,8 @@ sub widget_result {
 
     my $result;
     my $indi = $w->indicator;
-    $indi = ref $indi ? $indi : sub { $w->indicator };
-    if ( $indi->() && $c->request->param( $w->indicator ) ) {
+    $indi = ref $indi ? $indi : sub { $c->request->param( $w->indicator ) };
+    if ( $indi->() ) {
         local $w->{query}   = $c->request;
         local $w->{uploads} = $c->request->uploads;
         $result = $w->result;
